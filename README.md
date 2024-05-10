@@ -20,4 +20,11 @@ then run executable ./petwebsvc
 . Get Pets (Get): curl http://localhost:8080/pets
 . Get Pet (Get): curl http://localhost:8080/pets/1
 ```
+## Following up:
+```
+To running under high availability, scalability and observability
+. Dockerization (for container registry) and running under orchestrator based on statefulset 
+. Add Up Observability for monitoring perf and its business logic metrics
+. Running LoadTest to test its scalability, stability responsiveness
+```
 
