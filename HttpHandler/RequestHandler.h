@@ -11,15 +11,10 @@ using tcp = boost::asio::ip::tcp;
 class RequestHandler {
 public:
     MemCache& db;
-
     RequestHandler(MemCache& db);
-
     void operator()(tcp::socket& socket);
-
     beast::http::response<beast::http::string_body> handleRequest(const beast::http::request<beast::http::string_body>& req);
-
     std::string petToJson(const Pet& pet);
-
     std::string petsToJson(const std::vector<Pet*>& pets);
 };
 
